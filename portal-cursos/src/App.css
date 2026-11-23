@@ -21,3 +21,32 @@ button:hover { background: #105279; }
 .erro { color: #b42318; }
 .sucesso { color: #166534; font-weight: bold; }
 @media (max-width: 600px) { header { flex-direction: column; alignitems: flex-start; } }
+
+.lista-cursos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card-curso {
+  padding: 18px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  background: #f8fafc;
+  text-align: left;
+}
+
+.card-curso h2 {
+  color: #1f2937;
+}
+
+.card-curso p {
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .lista-cursos {
+    grid-template-columns: 1fr;
+  }
+}
